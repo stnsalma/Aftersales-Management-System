@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aftersales", "Aftersales\Aftersales.csproj", "{DDD9CA8B-AFAA-4A71-AABF-21E124DF5ADA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDD9CA8B-AFAA-4A71-AABF-21E124DF5ADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD9CA8B-AFAA-4A71-AABF-21E124DF5ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD9CA8B-AFAA-4A71-AABF-21E124DF5ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD9CA8B-AFAA-4A71-AABF-21E124DF5ADA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

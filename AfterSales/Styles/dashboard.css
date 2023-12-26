@@ -1,0 +1,41 @@
+﻿
+#tab-content .active-tab{ width:150px; border:1px solid #CCCCCC;border-left:1px solid #CCCCCC; border-right:1px solid #CCCCCC;
+                          float:left;text-align:center;color: #FFFFFF;background-color: #4F81BB; cursor:pointer; font-weight:bold; font-size:1.2em; height:30px;line-height:30px;}
+#tab-content .tab{ width:120px; border:1px solid #CCCCCC;border-left:1px solid #CCCCCC;border-right:1px solid #CCCCCC;
+                   float:left;text-align:center;margin-top:5px; height:25px; line-height:25px; cursor:pointer; font-weight:bold;color: #FFFFFF;background-color: #58ACFA;}
+
+
+
+.inputs{height:20px;border:1px solid gray;width:200px;}
+.input select{width:205px;height:25px;line-height:25px;border:1px solid gray;text-align:center}
+.label {float:left;width:200px;text-align:right;padding-right:10px;}
+.input{float:left;width:250px;}
+.row{float:left;height:30px; line-height:30px;}
+
+.headers{width:200px;float:left;background:#EEEEEE;border:1px solid #CCCCCC;height:30px;line-height:30px;text-align:center;font-weight:bold}
+.items{width:200px;float:left;border:1px solid #CCCCCC;text-align:center;height:30px;line-height:30px;}
+
+.insert{width:200px;float:left;background:#ffffff;border:1px solid #83AF45;height:30px;line-height:30px;text-align:center;}
+.bottom-summary{width:200px;float:left;background:#EEEEEE;height:30px;line-height:30px;text-align:center;font-weight:bold}
+
+.left-bottom{width: 200px; height: 30px; line-height: 30px; float: left; border-left: 1px solid #CCCCCC;
+                    border-bottom: 1px solid #CCCCCC; text-align: center}
+.left-bottom-right{width: 200px; height: 30px; line-height: 30px; float: left; border-left: 1px solid #CCCCCC;
+                    border-bottom: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC; text-align: center;vertical-align: middle}
+.button{border: 1px solid #83AF45; width: 80px; height: 20px;line-height: 20px; text-align: center; font-weight: bold; font-style: italic;
+                        cursor: pointer; float: left; margin-left: 15px; margin-top: 4px;}
+                    
+
+.grid
+{
+    width: 90px; 
+    height: 30px;
+    line-height: 30px; 
+    float: left; 
+    background: #EEEEEE;
+    font-weight: bold; 
+    border-left: 1px solid #CCCCCC; 
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC; 
+    text-align: center
+}

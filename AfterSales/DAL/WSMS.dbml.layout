@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.125, 15.125" name="WSMS">
+  <DataContextMoniker Name="/WSMSDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9eabdce8-0c91-4b55-8f98-837df5b3239e" absoluteBounds="0.75, 0.5, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/WSMSDataContext/ServicePoint" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cde7fc88-4420-456d-994a-cfb662c193ae" absoluteBounds="0.76500000000000012, 0.96, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5a43a18f-95ee-411d-95f7-f644a5e5f1f0" absoluteBounds="3.375, 0.5, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/WSMSDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8e2f1665-8ce8-4c80-b3f9-215118ffa241" absoluteBounds="3.3899999999999997, 0.96, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d384c6cb-394f-4657-9a35-ac808a4bf036" absoluteBounds="0.75, 3.25, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/WSMSDataContext/UserServicePoint" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f2bc5da0-9c40-40d3-a592-895dd33a00b6" absoluteBounds="0.76500000000000012, 3.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="07b58263-efaa-406f-b5d0-0dce5dbf1bed" absoluteBounds="3.375, 4, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/WSMSDataContext/UserRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a34dd41-5d9d-4950-801c-e5b9e79ae5d7" absoluteBounds="3.3899999999999997, 4.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2aad3472-1f71-4081-bb4e-a857db75f840" absoluteBounds="0.75, 5.125, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/WSMSDataContext/SparePart" />
+      <nestedChildShapes>
+        <elementListCompartment Id="79eba409-e830-47d1-a1e3-fa6dbb20bec4" absoluteBounds="0.76500000000000012, 5.585, 1.9700000000000002, 1.7878011067708333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="12d095bf-79fe-43f1-957e-393c58dca520" absoluteBounds="5.75, 0.5, 2, 6.7707340494791657">
+      <DataClassMoniker Name="/WSMSDataContext/ServiceMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="57878656-764d-4149-912e-c4e16547cc18" absoluteBounds="5.765, 0.96, 1.9700000000000002, 6.2107340494791661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="151ed2f0-b522-46b7-88b1-93300e2ae9c6" absoluteBounds="8.125, 0.5, 2, 4.6554182942708326">
+      <DataClassMoniker Name="/WSMSDataContext/ServiceTimeLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0095edd9-0856-4bb9-a6a4-025e31d3b7f7" absoluteBounds="8.14, 0.96, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="34e7d12f-ba5f-420a-8414-08e7f016899e" absoluteBounds="8.25, 4.875, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/WSMSDataContext/ServiceIssue" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fc755dae-8c45-4efe-88b3-fee506065cb8" absoluteBounds="8.265, 5.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a95b0403-3352-47a5-ac9e-3c8f5741d401" absoluteBounds="3.5, 6.375, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/WSMSDataContext/ServiceAssign" />
+      <nestedChildShapes>
+        <elementListCompartment Id="deaad3e8-58f8-42b2-b098-553005810e19" absoluteBounds="3.5149999999999997, 6.835, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cddd0d1a-37ae-468c-80ee-dda7eb7f6d81" absoluteBounds="5.75, 6.875, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/WSMSDataContext/ServiceTransfer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3633fdd6-2ec9-4f77-8097-d23bbebe5755" absoluteBounds="5.765, 7.335, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6fc76a80-9e2f-4b38-9f3a-d0413d009244" absoluteBounds="0.75, 7.625, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/WSMSDataContext/ServiceTechnicianQC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="06c59c22-8de1-463d-85bf-fea4c2fc3af5" absoluteBounds="0.765, 8.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="59831bf8-ed4f-4462-9752-20a7a663be3e" absoluteBounds="0.75, 10.375, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/WSMSDataContext/ServiceStatusLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="adb161eb-12bb-4847-9c65-cfcf5ec7ab9e" absoluteBounds="0.76500000000000012, 10.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="293f6a94-dfb2-4263-872f-954522b84ebf" absoluteBounds="3.5, 10, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/WSMSDataContext/Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d0234e1f-1f7c-4c8d-af9b-4d58c35bcc53" absoluteBounds="3.5149999999999997, 10.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4d61eb86-e886-44de-9b69-26be4d9371cf" absoluteBounds="8.25, 7.75, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/WSMSDataContext/RequisitionDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5b09caee-96b8-41fc-a100-8e322c04758e" absoluteBounds="8.265, 8.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bc590ff6-355e-4957-bcca-c2c00cbb968e" absoluteBounds="5.875, 9.875, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/WSMSDataContext/Requisition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f41d1ab-875a-4b89-836b-93cb4f206e16" absoluteBounds="5.89, 10.335, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0a580e6-c97d-4b48-9c4c-02ea771b5b1e" absoluteBounds="3.375, 12.125, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/WSMSDataContext/Issue" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3eec9a5a-3456-4465-a685-31e4cb809ccb" absoluteBounds="3.39, 12.585, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e6bd5863-9d89-4297-bd41-fe2625f057b6" absoluteBounds="8.25, 11.25, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/WSMSDataContext/IssueComment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bfbff885-796a-4605-a53d-36e86b0dcdef" absoluteBounds="8.265, 11.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0c3b862-5982-436c-959e-eb4d14db9549" absoluteBounds="10.875, 0.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/WSMSDataContext/PlazaAndRSM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="52c8a16c-b153-4dde-b6c0-21f9432cf1d2" absoluteBounds="10.89, 0.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8eb4b8f7-f9eb-40c8-9574-f8891c359472" absoluteBounds="10.875, 3.25, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/WSMSDataContext/RepRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ec1a697c-5dc3-487d-ab3a-6fe2e67e1e86" absoluteBounds="10.89, 3.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="78a493b2-2dc8-4155-9637-878d9de2514e" absoluteBounds="10.875, 5.125, 2, 3.1170068359375">
+      <DataClassMoniker Name="/WSMSDataContext/RepUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fca0cb6f-27c5-41b7-9de0-335043be6dd0" absoluteBounds="10.89, 5.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="caeda970-a55f-4205-b249-ecca127296c3" absoluteBounds="10.875, 8.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/WSMSDataContext/Zone" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b0130055-4431-4569-a325-d8327892cc19" absoluteBounds="10.89, 8.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

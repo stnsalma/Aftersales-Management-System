@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WSMS" Class="WSMSDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=test;Initial Catalog=WSMS;Persist Security Info=True;User ID=test" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="WSMSConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ServicePoint" Member="ServicePoints">
+    <Type Name="ServicePoint">
+      <Column Name="ServicePointID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ServicePointName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IsCentral" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Telephone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="UserRole" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RoleID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsMultiRole" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="EmployeeCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ServicePointID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserServicePoint" Member="UserServicePoints">
+    <Type Name="UserServicePoint">
+      <Column Name="UserServicePointID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ServicePointID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="JoiningDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TransferDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserRole" Member="UserRoles">
+    <Type Name="UserRole">
+      <Column Name="UserRoleID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RoleID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SpareParts" Member="SpareParts">
+    <Type Name="SparePart">
+      <Column Name="ItemID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ItemCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ItemName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ItemPrice" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ItemDesc" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ItemGroup" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ServiceMaster" Member="ServiceMasters">
+    <Type Name="ServiceMaster">
+      <Column Name="ServiceID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ServicePointID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ServicePlaceDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsBilling" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BillingConfirmDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ServiceType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ExpectedDeliveryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeliveryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelivered" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="WarrantyAvailable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsApprovedRequired" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ApprovedStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Priority" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ProblemType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ProblemCatagory" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ServiceDescription" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ServiceStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="CustomerName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CustomerAddress" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="CustomerPhone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CustomerMobile" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CustomerEmail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ReceivedItem" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="WarrantyVoidReason" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ServiceTimeLog" Member="ServiceTimeLogs">
+    <Type Name="ServiceTimeLog">
+      <Column Name="ServiceTimeLogID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ServiceDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AssignID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TechnicianID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="QCID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="LoginTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ServiceID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="StartTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EndTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="QCStartTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="QCEndTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsReleased" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsQCReleased" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ServiceLenth" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReleaseStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QCReleaseStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ServiceIssue" Member="ServiceIssues">
+    <Type Name="ServiceIssue">
+      <Column Name="ServiceIssueID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ServiceID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IssueID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TechnicianID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QCID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TechnicianStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QCStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ServiceAssign" Member="ServiceAssigns">
+    <Type Name="ServiceAssign">
+      <Column Name="AssignID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ServiceID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="AssignTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AssignBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Priority" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="ReleaseType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ReleaseBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ReleaseTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ReleaseReason" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ServiceTransfer" Member="ServiceTransfers">
+    <Type Name="ServiceTransfer">
+      <Column Name="ServiceTransferID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ServiceID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ParentPointID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TransferPointID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TransferDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsApproved" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ApprovedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ApprovedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="AddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ServiceTechnicianQC" Member="ServiceTechnicianQCs">
+    <Type Name="ServiceTechnicianQC">
+      <Column Name="ServiceTechnicianQCID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ServiceID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AssignDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ReleaseDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ServiceStatusLog" Member="ServiceStatusLogs">
+    <Type Name="ServiceStatusLog">
+      <Column Name="ServiceStatusLogID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ServiceID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StatusAction" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ActionTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Role" Member="Roles">
+    <Type Name="Role">
+      <Column Name="RoleID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RoleName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RequisitionDetail" Member="RequisitionDetails">
+    <Type Name="RequisitionDetail">
+      <Column Name="RequisitionDetailID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RequisitionID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ItemID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ItemCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ItemName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="IsssueID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ItemStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Requisition" Member="Requisitions">
+    <Type Name="Requisition">
+      <Column Name="RequisitionID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ServiceID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="RequisitionValue" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="RecommendBy" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="RecommendTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ApprovedBy" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ApprovedTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsApproved" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.Data.Linq.Binary" DbType="VarBinary(500)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="AddedBy" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="AddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Issues" Member="Issues">
+    <Type Name="Issue">
+      <Column Name="IssueID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IssueName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IssueDesc" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="IssueType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IssueCatagory" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IssueComment" Member="IssueComments">
+    <Type Name="IssueComment">
+      <Column Name="IssueCommentID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ServiceIssueID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="CommentDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="ReplaceMentdb.PlazaAndRSM" Member="PlazaAndRSMs">
+    <Type Name="PlazaAndRSM">
+      <Column Name="PlazaAndRSMID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Organaization_Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PlazaAndRSMCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ZoneID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="ReplaceMentdb.RepRoles" Member="RepRoles">
+    <Type Name="RepRole">
+      <Column Name="RepRoleID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RepRoleName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="ReplaceMentdb.RepUsers" Member="RepUsers">
+    <Type Name="RepUser">
+      <Column Name="RepUserID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RepUserName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RepUserFullName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PlazaAndRSMID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ZoneID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RepRoleID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="ReplaceMentdb.Zone" Member="Zones">
+    <Type Name="Zone">
+      <Column Name="ZoneID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ZoneName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="AddedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

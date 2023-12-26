@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WSMS.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var height_diff = $(window).height() - 175;
+            if (height_diff > 0) {
+                $('.main').css('min-height', height_diff);
+            }
+        });
+    </script>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    After Sales Management System
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <div id="log-out" style="text-align:left; max-width:250px;margin:10px;float:right;padding-right:50px;vertical-align:middle;text-align:center;font-weight:bold;font-size:14px;color:#CCCCCC">
+		            Hi, <span style="color:#f9f9f9;font-style:italic;font-weight:bold;font-size:14px">
+                        <% try
+                           { %>
+
+		                <%=WSMS.Helpers.LoginHelper.LoggedInUsers.RepUserName%>
+                        <%}
+                           catch (Exception ex)
+                           { %>
+                            window.location("Login.aspx");
+                        <%} %>
+
+		                </span>! 
+		                <span style="cursor:pointer" onclick="window.location='Login.aspx'"> Log Out </span>
+	            </div>
+                <%--<asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>--%>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footers" id="bottomtop">
+    </div>
+    <div class="footers" id="bottombar">
+        
+    </div>
+    </form>
+</body>
+</html>

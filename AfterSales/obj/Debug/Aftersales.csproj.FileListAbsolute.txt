@@ -1,0 +1,80 @@
+D:\Recent wsms 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\bin\Reports\LoanRequisitionSlip.rpt
+D:\Recent wsms 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\bin\Reports\ServiceChallanReport.rpt
+D:\Recent wsms 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\bin\Reports\ServiceChallanReportBilling.rpt
+D:\Recent wsms 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\bin\Reports\ServiceReceiveMemoReport.rpt
+D:\Recent wsms 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\bin\Reports\ServiceReceiveMemoReportBilling.rpt
+D:\Recent wsms 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\bin\Reports\LoanRequisitionSlip.cs
+D:\Recent wsms 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\bin\Reports\ServiceChallanReport.cs
+D:\Recent wsms 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\bin\Reports\ServiceChallanReportBilling.cs
+D:\Recent wsms 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\bin\Reports\ServiceReceiveMemoReport.cs
+D:\Recent wsms 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\bin\Reports\ServiceReceiveMemoReportBilling.cs
+D:\Recent wsms 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\bin\WSMS.dll
+D:\Recent wsms 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\bin\WSMS.pdb
+D:\Recent wsms 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\obj\Debug\Aftersales.csprojResolveAssemblyReference.cache
+D:\Recent wsms 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\obj\Debug\WSMS.dll
+D:\Recent wsms 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\obj\Debug\WSMS.pdb
+D:\Recent Aftersales 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\bin\WSMS.dll
+D:\Recent Aftersales 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\bin\WSMS.pdb
+D:\Recent Aftersales 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\obj\Debug\RdlCompile.cache
+D:\Recent Aftersales 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\obj\Debug\RdlCompile.compiled
+D:\Recent Aftersales 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\obj\Debug\WSMS.dll
+D:\Recent Aftersales 14-09-2015\ReturnSet_03-10-2015\Aftersales\Aftersales\obj\Debug\WSMS.pdb
+D:\AfterSales_Update_10_03_2016\Aftersales\Aftersales\bin\WSMS.dll.config
+D:\AfterSales_Update_10_03_2016\Aftersales\Aftersales\bin\WSMS.dll
+D:\AfterSales_Update_10_03_2016\Aftersales\Aftersales\bin\WSMS.pdb
+D:\AfterSales_Update_10_03_2016\Aftersales\Aftersales\obj\Debug\RdlCompile.cache
+D:\AfterSales_Update_10_03_2016\Aftersales\Aftersales\obj\Debug\RdlCompile.compiled
+D:\AfterSales_Update_10_03_2016\Aftersales\Aftersales\obj\Debug\WSMS.dll
+D:\AfterSales_Update_10_03_2016\Aftersales\Aftersales\obj\Debug\WSMS.pdb
+D:\AfterSales_Update_21_03_2016\Aftersales\Aftersales\bin\WSMS.dll.config
+D:\AfterSales_Update_21_03_2016\Aftersales\Aftersales\bin\WSMS.dll
+D:\AfterSales_Update_21_03_2016\Aftersales\Aftersales\bin\WSMS.pdb
+D:\AfterSales_Update_21_03_2016\Aftersales\Aftersales\obj\Debug\RdlCompile.cache
+D:\AfterSales_Update_21_03_2016\Aftersales\Aftersales\obj\Debug\RdlCompile.compiled
+D:\AfterSales_Update_21_03_2016\Aftersales\Aftersales\obj\Debug\WSMS.dll
+D:\AfterSales_Update_21_03_2016\Aftersales\Aftersales\obj\Debug\WSMS.pdb
+D:\AfterSales_Update_21_03_2016\Aftersales\Aftersales\obj\Debug\Aftersales.csprojResolveAssemblyReference.cache
+D:\AfterSales_Update_04_09_2016\Aftersales\Aftersales\bin\WSMS.dll.config
+D:\AfterSales_Update_04_09_2016\Aftersales\Aftersales\bin\WSMS.dll
+D:\AfterSales_Update_04_09_2016\Aftersales\Aftersales\bin\WSMS.pdb
+D:\AfterSales_Update_04_09_2016\Aftersales\Aftersales\obj\Debug\RdlCompile.cache
+D:\AfterSales_Update_04_09_2016\Aftersales\Aftersales\obj\Debug\RdlCompile.compiled
+D:\AfterSales_Update_04_09_2016\Aftersales\Aftersales\obj\Debug\WSMS.dll
+D:\AfterSales_Update_04_09_2016\Aftersales\Aftersales\obj\Debug\WSMS.pdb
+D:\AfterSales_Update_04_09_2016_recent\Aftersales\Aftersales\bin\WSMS.dll.config
+D:\AfterSales_Update_04_09_2016_recent\Aftersales\Aftersales\bin\WSMS.dll
+D:\AfterSales_Update_04_09_2016_recent\Aftersales\Aftersales\bin\WSMS.pdb
+D:\AfterSales_Update_04_09_2016_recent\Aftersales\Aftersales\obj\Debug\Aftersales.csprojResolveAssemblyReference.cache
+D:\AfterSales_Update_04_09_2016_recent\Aftersales\Aftersales\obj\Debug\RdlCompile.cache
+D:\AfterSales_Update_04_09_2016_recent\Aftersales\Aftersales\obj\Debug\RdlCompile.compiled
+D:\AfterSales_Update_04_09_2016_recent\Aftersales\Aftersales\obj\Debug\WSMS.dll
+D:\AfterSales_Update_04_09_2016_recent\Aftersales\Aftersales\obj\Debug\WSMS.pdb
+D:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\AfterSales_Update_04_09_2016_recent\Aftersales\Aftersales\bin\WSMS.dll
+D:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\AfterSales_Update_04_09_2016_recent\Aftersales\Aftersales\bin\WSMS.pdb
+D:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\AfterSales_Update_04_09_2016_recent\Aftersales\Aftersales\obj\Debug\Aftersales.csprojResolveAssemblyReference.cache
+D:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\AfterSales_Update_04_09_2016_recent\Aftersales\Aftersales\obj\Debug\RdlCompile.cache
+D:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\AfterSales_Update_04_09_2016_recent\Aftersales\Aftersales\obj\Debug\RdlCompile.compiled
+D:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\AfterSales_Update_04_09_2016_recent\Aftersales\Aftersales\obj\Debug\WSMS.dll
+D:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\AfterSales_Update_04_09_2016_recent\Aftersales\Aftersales\obj\Debug\WSMS.pdb
+D:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\Aftersales\bin\WSMS.dll
+D:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\Aftersales\bin\WSMS.pdb
+D:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\Aftersales\obj\Debug\Aftersales.csprojResolveAssemblyReference.cache
+D:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\Aftersales\obj\Debug\RdlCompile.cache
+D:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\Aftersales\obj\Debug\RdlCompile.compiled
+D:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\Aftersales\obj\Debug\WSMS.dll
+D:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\Aftersales\obj\Debug\WSMS.pdb
+F:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\Aftersales\bin\WSMS.dll.config
+F:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\Aftersales\bin\WSMS.dll
+F:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\Aftersales\bin\WSMS.pdb
+F:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\Aftersales\obj\Debug\Aftersales.csprojResolveAssemblyReference.cache
+F:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\Aftersales\obj\Debug\RdlCompile.cache
+F:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\Aftersales\obj\Debug\RdlCompile.compiled
+F:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\Aftersales\obj\Debug\WSMS.dll
+F:\Recent Aftersales 14-09-2015\AfterSales for Server 97\97 update for back up\Aftersales\Aftersales\obj\Debug\WSMS.pdb
+G:\Aftersales_New\Aftersales\Aftersales\bin\WSMS.dll.config
+G:\Aftersales_New\Aftersales\Aftersales\bin\WSMS.dll
+G:\Aftersales_New\Aftersales\Aftersales\bin\WSMS.pdb
+G:\Aftersales_New\Aftersales\Aftersales\obj\Debug\RdlCompile.cache
+G:\Aftersales_New\Aftersales\Aftersales\obj\Debug\RdlCompile.compiled
+G:\Aftersales_New\Aftersales\Aftersales\obj\Debug\WSMS.dll
+G:\Aftersales_New\Aftersales\Aftersales\obj\Debug\WSMS.pdb

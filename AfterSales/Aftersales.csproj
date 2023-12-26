@@ -1,0 +1,838 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DDD9CA8B-AFAA-4A71-AABF-21E124DF5ADA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WSMS</RootNamespace>
+    <AssemblyName>WSMS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>C:\Documents and Settings\Administrator\Desktop\WSMS Build\WSMS_20150105_H\WSMS\WSMS\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\Desktop\WSMS Build\WSMS_20150105_H\WSMS\WSMS\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling">
+      <HintPath>C:\Documents and Settings\Administrator\Desktop\WSMS Build\WSMS_20150105_H\WSMS\WSMS\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging">
+      <HintPath>C:\Documents and Settings\Administrator\Desktop\WSMS Build\WSMS_20150105_H\WSMS\WSMS\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging">
+      <HintPath>C:\Documents and Settings\Administrator\Desktop\WSMS Build\WSMS_20150105_H\WSMS\WSMS\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security.Cryptography">
+      <HintPath>C:\Documents and Settings\Administrator\Desktop\WSMS Build\WSMS_20150105_H\WSMS\WSMS\bin\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>C:\Documents and Settings\Administrator\Desktop\WSMS Build\WSMS_20150105_H\WSMS\WSMS\bin\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="bin\WSMS.dll" />
+    <Content Include="bin\WSMS.pdb" />
+    <Content Include="CorporateStore.aspx" />
+    <Content Include="images\blank.gif" />
+    <Content Include="images\Logo.jpg" />
+    <Content Include="IMEIPrimaryRecommend.aspx" />
+    <Content Include="IMEIPrimaryRecommendByCommonMonitor.aspx" />
+    <Content Include="IMEIRequest.aspx" />
+    <Content Include="IMEIRequestForArea.aspx" />
+    <Content Include="IMEISpecialAndSoockFaulty.aspx" />
+    <Content Include="IMEI_Deactivate.aspx" />
+    <Content Include="Module\AreaIMEIRequest.ascx" />
+    <Content Include="Module\AreaReport.ascx" />
+    <Content Include="Module\AreaStockFaulty.ascx" />
+    <Content Include="Module\CorporateStoreReceive.ascx" />
+    <Content Include="Module\CorporateStoreReport.ascx" />
+    <Content Include="Module\DayWiseDealerSalesEntryFromTSO.ascx" />
+    <Content Include="Module\DealerHistory.ascx" />
+    <Content Include="Module\DealerHistoryIntoPlazaAndRSM.ascx" />
+    <Content Include="Module\DeclinedFinalPhase.ascx" />
+    <Content Include="Module\DisplayIMEIListApprovedByNSM.ascx" />
+    <Content Include="Module\DisplayProductEntryByTso.ascx" />
+    <Content Include="Module\HandsetFromWastageMgtToWarehouse.ascx" />
+    <Content Include="Module\IMEIApprovedMarketting.ascx" />
+    <Content Include="Module\IMEIRecommendMonitoring.ascx" />
+    <Content Include="Module\IMEIRequestFromPlaza.ascx" />
+    <Content Include="Module\ManagementReport.ascx" />
+    <Content Include="Module\MarketingReport.ascx" />
+    <Content Include="Module\MonitoringAndMarkettingReport.ascx" />
+    <Content Include="Module\MonitorReport.ascx" />
+    <Content Include="Module\MonitorReportByCommonMonitor.ascx" />
+    <Content Include="Module\PlazaReport.ascx" />
+    <Content Include="Module\PrimaryRecommend.ascx" />
+    <Content Include="Module\PrimaryRecommendByCommonMonitor.ascx" />
+    <Content Include="Module\PrintActiveReplacementServiceIDFromPlaza.ascx" />
+    <Content Include="Module\PrintFaultySpareParts.ascx" />
+    <Content Include="Module\ReplacementReportForPlaza.ascx" />
+    <Content Include="Module\ReplacementSubModuleMonitoring.ascx" />
+    <Content Include="Module\RequestForStockFaulty.ascx" />
+    <Content Include="Module\ServiceCenterIMEIRequest.ascx" />
+    <Content Include="Module\ServiceCenterReplacementIMEIReq.ascx" />
+    <Content Include="Module\ServiceCenterReport.ascx" />
+    <Content Include="Module\ServiceReplacementFromPlaza.ascx" />
+    <Content Include="Module\SpecialRequest.ascx" />
+    <Content Include="Module\SpecialRequestByCommonMonitor.ascx" />
+    <Content Include="Module\StockReconciliation.ascx" />
+    <Content Include="Module\TabControl.ascx" />
+    <Content Include="Module\UserListControl.ascx" />
+    <Content Include="Module\WareHouseApproval.ascx" />
+    <Content Include="Module\WarehouseReport.ascx" />
+    <Content Include="Module\WastageHandsetMovement.ascx" />
+    <Content Include="Module\WastageHandsetReceive.ascx" />
+    <Content Include="Module\WastageReport.ascx" />
+    <Content Include="Module\WastageSetReportForWarehouse.ascx" />
+    <Content Include="RDLCReports\PrintedCopyOfReplacementIMEI.aspx" />
+    <Content Include="RDLCReports\PrintActiveServiceIDFromPlaza.aspx" />
+    <Content Include="Scripts\alertifyjs\alertify.js" />
+    <Content Include="Scripts\alertifyjs\alertify.min.js" />
+    <Content Include="Scripts\alertifyjs\css\alertify.css" />
+    <Content Include="Scripts\alertifyjs\css\alertify.min.css" />
+    <Content Include="Scripts\alertifyjs\css\alertify.rtl.css" />
+    <Content Include="Scripts\alertifyjs\css\alertify.rtl.min.css" />
+    <Content Include="Scripts\alertifyjs\css\themes\bootstrap.css" />
+    <Content Include="Scripts\alertifyjs\css\themes\bootstrap.min.css" />
+    <Content Include="Scripts\alertifyjs\css\themes\bootstrap.rtl.css" />
+    <Content Include="Scripts\alertifyjs\css\themes\bootstrap.rtl.min.css" />
+    <Content Include="Scripts\alertifyjs\css\themes\default.css" />
+    <Content Include="Scripts\alertifyjs\css\themes\default.min.css" />
+    <Content Include="Scripts\alertifyjs\css\themes\default.rtl.css" />
+    <Content Include="Scripts\alertifyjs\css\themes\default.rtl.min.css" />
+    <Content Include="Scripts\alertifyjs\css\themes\semantic.css" />
+    <Content Include="Scripts\alertifyjs\css\themes\semantic.min.css" />
+    <Content Include="Scripts\alertifyjs\css\themes\semantic.rtl.css" />
+    <Content Include="Scripts\alertifyjs\css\themes\semantic.rtl.min.css" />
+    <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\downloadify.min.js" />
+    <Content Include="Scripts\from_html.js" />
+    <Content Include="Scripts\html2canvas.js" />
+    <Content Include="Scripts\jquery-1.7.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.17.custom.min.js" />
+    <Content Include="Scripts\jquery.blockUI.js" />
+    <Content Include="Scripts\jquery.center.min.js" />
+    <Content Include="Scripts\jquery.hideseek.min.js" />
+    <Content Include="Scripts\jquery.msg.min.js" />
+    <Content Include="Scripts\jquery.simulate.js" />
+    <Content Include="Scripts\jspdf.debug.js" />
+    <Content Include="Scripts\jspdf.js" />
+    <Content Include="Scripts\jspdf.min.js" />
+    <Content Include="Scripts\jspdf.PLUGINTEMPLATE.js" />
+    <Content Include="Scripts\split_text_to_size.js" />
+    <Content Include="Scripts\standard_fonts_metrics.js" />
+    <Content Include="ServiceCenterActivities.aspx" />
+    <Content Include="StockReconciliationForTSO.aspx" />
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\Copy of dashboard.css" />
+    <Content Include="Styles\jquery.msg.css" />
+    <Content Include="Styles\Login.css" />
+    <Content Include="SuperAdmin.aspx" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\cal.gif" />
+    <Content Include="images\delete-queue-item.png" />
+    <Content Include="images\minus-2.png" />
+    <Content Include="images\plus-2.png" />
+    <Content Include="images\processing.gif" />
+    <Content Include="images\save.png" />
+    <Content Include="Styles\image\ajax-loader.gif" />
+    <Content Include="Styles\image\close_pop.png" />
+    <Content Include="Styles\image\minus-2.png" />
+    <Content Include="Styles\image\plus-2.png" />
+    <Content Include="Styles\image\processing.gif" />
+    <Content Include="Styles\image\save.png" />
+    <Content Include="Styles\image\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Styles\image\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Styles\image\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Styles\image\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Styles\image\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Styles\image\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Styles\image\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Styles\image\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Styles\image\ui-icons_222222_256x240.png" />
+    <Content Include="Styles\image\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Styles\image\ui-icons_454545_256x240.png" />
+    <Content Include="Styles\image\ui-icons_888888_256x240.png" />
+    <Content Include="Styles\image\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\glDatePicker.js" />
+    <Content Include="Scripts\jquery.datepick.js" />
+    <Content Include="Scripts\jquery.plugin.js" />
+    <Content Include="images\header.png" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.ui.core.js" />
+    <Content Include="Scripts\jquery.ui.widget.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Styles\dashboard.css" />
+    <Content Include="Styles\glDatePicker.default.css" />
+    <Content Include="Styles\jquery-ui.css" />
+    <Content Include="Styles\jquery.datepick.css" />
+    <Content Include="Styles\modal-window.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Template.aspx" />
+    <Content Include="WareHouse.aspx" />
+    <Content Include="WarehouseDeclinedFinalPhase.aspx" />
+    <Content Include="WastageInventory.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CorporateStore.aspx.cs">
+      <DependentUpon>CorporateStore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CorporateStore.aspx.designer.cs">
+      <DependentUpon>CorporateStore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Alert.cs" />
+    <Compile Include="Helpers\ClientSideScript.cs" />
+    <Compile Include="IMEIPrimaryRecommend.aspx.cs">
+      <DependentUpon>IMEIPrimaryRecommend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IMEIPrimaryRecommend.aspx.designer.cs">
+      <DependentUpon>IMEIPrimaryRecommend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IMEIPrimaryRecommendByCommonMonitor.aspx.cs">
+      <DependentUpon>IMEIPrimaryRecommendByCommonMonitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IMEIPrimaryRecommendByCommonMonitor.aspx.designer.cs">
+      <DependentUpon>IMEIPrimaryRecommendByCommonMonitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IMEIRequest.aspx.cs">
+      <DependentUpon>IMEIRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IMEIRequest.aspx.designer.cs">
+      <DependentUpon>IMEIRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IMEIRequestForArea.aspx.cs">
+      <DependentUpon>IMEIRequestForArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IMEIRequestForArea.aspx.designer.cs">
+      <DependentUpon>IMEIRequestForArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IMEISpecialAndSoockFaulty.aspx.cs">
+      <DependentUpon>IMEISpecialAndSoockFaulty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IMEISpecialAndSoockFaulty.aspx.designer.cs">
+      <DependentUpon>IMEISpecialAndSoockFaulty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IMEI_Deactivate.aspx.cs">
+      <DependentUpon>IMEI_Deactivate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IMEI_Deactivate.aspx.designer.cs">
+      <DependentUpon>IMEI_Deactivate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\WSMSEnums.cs" />
+    <Compile Include="Module\AreaIMEIRequest.ascx.cs">
+      <DependentUpon>AreaIMEIRequest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\AreaIMEIRequest.ascx.designer.cs">
+      <DependentUpon>AreaIMEIRequest.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\AreaReport.ascx.cs">
+      <DependentUpon>AreaReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\AreaReport.ascx.designer.cs">
+      <DependentUpon>AreaReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\AreaStockFaulty.ascx.cs">
+      <DependentUpon>AreaStockFaulty.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\AreaStockFaulty.ascx.designer.cs">
+      <DependentUpon>AreaStockFaulty.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\CorporateStoreReceive.ascx.cs">
+      <DependentUpon>CorporateStoreReceive.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\CorporateStoreReceive.ascx.designer.cs">
+      <DependentUpon>CorporateStoreReceive.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\CorporateStoreReport.ascx.cs">
+      <DependentUpon>CorporateStoreReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\CorporateStoreReport.ascx.designer.cs">
+      <DependentUpon>CorporateStoreReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\DayWiseDealerSalesEntryFromTSO.ascx.cs">
+      <DependentUpon>DayWiseDealerSalesEntryFromTSO.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\DayWiseDealerSalesEntryFromTSO.ascx.designer.cs">
+      <DependentUpon>DayWiseDealerSalesEntryFromTSO.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\DealerHistory.ascx.cs">
+      <DependentUpon>DealerHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\DealerHistory.ascx.designer.cs">
+      <DependentUpon>DealerHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\DealerHistoryIntoPlazaAndRSM.ascx.cs">
+      <DependentUpon>DealerHistoryIntoPlazaAndRSM.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\DealerHistoryIntoPlazaAndRSM.ascx.designer.cs">
+      <DependentUpon>DealerHistoryIntoPlazaAndRSM.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\DeclinedFinalPhase.ascx.cs">
+      <DependentUpon>DeclinedFinalPhase.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\DeclinedFinalPhase.ascx.designer.cs">
+      <DependentUpon>DeclinedFinalPhase.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\DisplayIMEIListApprovedByNSM.ascx.cs">
+      <DependentUpon>DisplayIMEIListApprovedByNSM.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\DisplayIMEIListApprovedByNSM.ascx.designer.cs">
+      <DependentUpon>DisplayIMEIListApprovedByNSM.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\DisplayProductEntryByTso.ascx.cs">
+      <DependentUpon>DisplayProductEntryByTso.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\DisplayProductEntryByTso.ascx.designer.cs">
+      <DependentUpon>DisplayProductEntryByTso.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\HandsetFromWastageMgtToWarehouse.ascx.cs">
+      <DependentUpon>HandsetFromWastageMgtToWarehouse.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\HandsetFromWastageMgtToWarehouse.ascx.designer.cs">
+      <DependentUpon>HandsetFromWastageMgtToWarehouse.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\IMEIApprovedMarketting.ascx.cs">
+      <DependentUpon>IMEIApprovedMarketting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\IMEIApprovedMarketting.ascx.designer.cs">
+      <DependentUpon>IMEIApprovedMarketting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\IMEIRecommendMonitoring.ascx.cs">
+      <DependentUpon>IMEIRecommendMonitoring.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\IMEIRecommendMonitoring.ascx.designer.cs">
+      <DependentUpon>IMEIRecommendMonitoring.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\IMEIRequestFromPlaza.ascx.cs">
+      <DependentUpon>IMEIRequestFromPlaza.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\IMEIRequestFromPlaza.ascx.designer.cs">
+      <DependentUpon>IMEIRequestFromPlaza.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ManagementReport.ascx.cs">
+      <DependentUpon>ManagementReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ManagementReport.ascx.designer.cs">
+      <DependentUpon>ManagementReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\MarketingReport.ascx.cs">
+      <DependentUpon>MarketingReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\MarketingReport.ascx.designer.cs">
+      <DependentUpon>MarketingReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\MonitoringAndMarkettingReport.ascx.cs">
+      <DependentUpon>MonitoringAndMarkettingReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\MonitoringAndMarkettingReport.ascx.designer.cs">
+      <DependentUpon>MonitoringAndMarkettingReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\MonitorReport.ascx.cs">
+      <DependentUpon>MonitorReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\MonitorReport.ascx.designer.cs">
+      <DependentUpon>MonitorReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\MonitorReportByCommonMonitor.ascx.cs">
+      <DependentUpon>MonitorReportByCommonMonitor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\MonitorReportByCommonMonitor.ascx.designer.cs">
+      <DependentUpon>MonitorReportByCommonMonitor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\PlazaReport.ascx.cs">
+      <DependentUpon>PlazaReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\PlazaReport.ascx.designer.cs">
+      <DependentUpon>PlazaReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\PrimaryRecommend.ascx.cs">
+      <DependentUpon>PrimaryRecommend.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\PrimaryRecommend.ascx.designer.cs">
+      <DependentUpon>PrimaryRecommend.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\PrimaryRecommendByCommonMonitor.ascx.cs">
+      <DependentUpon>PrimaryRecommendByCommonMonitor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\PrimaryRecommendByCommonMonitor.ascx.designer.cs">
+      <DependentUpon>PrimaryRecommendByCommonMonitor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\PrintActiveReplacementServiceIDFromPlaza.ascx.cs">
+      <DependentUpon>PrintActiveReplacementServiceIDFromPlaza.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\PrintActiveReplacementServiceIDFromPlaza.ascx.designer.cs">
+      <DependentUpon>PrintActiveReplacementServiceIDFromPlaza.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\PrintFaultySpareParts.ascx.cs">
+      <DependentUpon>PrintFaultySpareParts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\PrintFaultySpareParts.ascx.designer.cs">
+      <DependentUpon>PrintFaultySpareParts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ReplacementReportForPlaza.ascx.cs">
+      <DependentUpon>ReplacementReportForPlaza.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ReplacementReportForPlaza.ascx.designer.cs">
+      <DependentUpon>ReplacementReportForPlaza.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ReplacementSubModuleMonitoring.ascx.cs">
+      <DependentUpon>ReplacementSubModuleMonitoring.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ReplacementSubModuleMonitoring.ascx.designer.cs">
+      <DependentUpon>ReplacementSubModuleMonitoring.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\RequestForStockFaulty.ascx.cs">
+      <DependentUpon>RequestForStockFaulty.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\RequestForStockFaulty.ascx.designer.cs">
+      <DependentUpon>RequestForStockFaulty.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ServiceCenterIMEIRequest.ascx.cs">
+      <DependentUpon>ServiceCenterIMEIRequest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ServiceCenterIMEIRequest.ascx.designer.cs">
+      <DependentUpon>ServiceCenterIMEIRequest.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ServiceCenterReplacementIMEIReq.ascx.cs">
+      <DependentUpon>ServiceCenterReplacementIMEIReq.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ServiceCenterReplacementIMEIReq.ascx.designer.cs">
+      <DependentUpon>ServiceCenterReplacementIMEIReq.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ServiceCenterReport.ascx.cs">
+      <DependentUpon>ServiceCenterReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ServiceCenterReport.ascx.designer.cs">
+      <DependentUpon>ServiceCenterReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ServiceReplacementFromPlaza.ascx.cs">
+      <DependentUpon>ServiceReplacementFromPlaza.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ServiceReplacementFromPlaza.ascx.designer.cs">
+      <DependentUpon>ServiceReplacementFromPlaza.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\SpecialRequest.ascx.cs">
+      <DependentUpon>SpecialRequest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\SpecialRequest.ascx.designer.cs">
+      <DependentUpon>SpecialRequest.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\SpecialRequestByCommonMonitor.ascx.cs">
+      <DependentUpon>SpecialRequestByCommonMonitor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\SpecialRequestByCommonMonitor.ascx.designer.cs">
+      <DependentUpon>SpecialRequestByCommonMonitor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\StockReconciliation.ascx.cs">
+      <DependentUpon>StockReconciliation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\StockReconciliation.ascx.designer.cs">
+      <DependentUpon>StockReconciliation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\TabControl.ascx.cs">
+      <DependentUpon>TabControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\TabControl.ascx.designer.cs">
+      <DependentUpon>TabControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\UserListControl.ascx.cs">
+      <DependentUpon>UserListControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\UserListControl.ascx.designer.cs">
+      <DependentUpon>UserListControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\WareHouseApproval.ascx.cs">
+      <DependentUpon>WareHouseApproval.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\WareHouseApproval.ascx.designer.cs">
+      <DependentUpon>WareHouseApproval.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\WarehouseReport.ascx.cs">
+      <DependentUpon>WarehouseReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\WarehouseReport.ascx.designer.cs">
+      <DependentUpon>WarehouseReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\WastageHandsetMovement.ascx.cs">
+      <DependentUpon>WastageHandsetMovement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\WastageHandsetMovement.ascx.designer.cs">
+      <DependentUpon>WastageHandsetMovement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\WastageHandsetReceive.ascx.cs">
+      <DependentUpon>WastageHandsetReceive.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\WastageHandsetReceive.ascx.designer.cs">
+      <DependentUpon>WastageHandsetReceive.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\WastageReport.ascx.cs">
+      <DependentUpon>WastageReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\WastageReport.ascx.designer.cs">
+      <DependentUpon>WastageReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\WastageSetReportForWarehouse.ascx.cs">
+      <DependentUpon>WastageSetReportForWarehouse.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\WastageSetReportForWarehouse.ascx.designer.cs">
+      <DependentUpon>WastageSetReportForWarehouse.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="RDLCReports\PrintedCopyOfReplacementIMEI.aspx.cs">
+      <DependentUpon>PrintedCopyOfReplacementIMEI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RDLCReports\PrintedCopyOfReplacementIMEI.aspx.designer.cs">
+      <DependentUpon>PrintedCopyOfReplacementIMEI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RDLCReports\PrintActiveServiceIDFromPlaza.aspx.cs">
+      <DependentUpon>PrintActiveServiceIDFromPlaza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RDLCReports\PrintActiveServiceIDFromPlaza.aspx.designer.cs">
+      <DependentUpon>PrintActiveServiceIDFromPlaza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceCenterActivities.aspx.cs">
+      <DependentUpon>ServiceCenterActivities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceCenterActivities.aspx.designer.cs">
+      <DependentUpon>ServiceCenterActivities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockReconciliationForTSO.aspx.cs">
+      <DependentUpon>StockReconciliationForTSO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockReconciliationForTSO.aspx.designer.cs">
+      <DependentUpon>StockReconciliationForTSO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin.aspx.cs">
+      <DependentUpon>SuperAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin.aspx.designer.cs">
+      <DependentUpon>SuperAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\WSMS.cs">
+      <DependentUpon>WSMS.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\WSMS.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WSMS.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\DataAccessHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\CommonHelper.cs" />
+    <Compile Include="Helpers\EncryptionDecryptionHelper.cs" />
+    <Compile Include="Helpers\HelperBase.cs" />
+    <Compile Include="Helpers\LoginHelper.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Template.aspx.cs">
+      <DependentUpon>Template.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template.aspx.designer.cs">
+      <DependentUpon>Template.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WareHouse.aspx.cs">
+      <DependentUpon>WareHouse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WareHouse.aspx.designer.cs">
+      <DependentUpon>WareHouse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseDeclinedFinalPhase.aspx.cs">
+      <DependentUpon>WarehouseDeclinedFinalPhase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehouseDeclinedFinalPhase.aspx.designer.cs">
+      <DependentUpon>WarehouseDeclinedFinalPhase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WastageInventory.aspx.cs">
+      <DependentUpon>WastageInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WastageInventory.aspx.designer.cs">
+      <DependentUpon>WastageInventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DAL\WSMS.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>WSMS.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DAL\WSMS.dbml.layout">
+      <DependentUpon>WSMS.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RDLCReports\Report1.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>22879</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
